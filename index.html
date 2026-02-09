@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGI MARKETS PRO™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Neon Title */
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 2.5rem;
+      color: #fff200;
+      text-shadow: 0 0 10px #fff200, 0 0 20px #fff200, 0 0 30px #ffea00;
+      margin: 20px 0;
+    }
+
+    /* Urgent Text */
+    .urgent {
+      font-size: 1.5rem;
+      color: #ff3c3c;
+      text-shadow: 0 0 5px #ff3c3c, 0 0 10px #ff3c3c;
+      margin-bottom: 20px;
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.05); }
+    }
+
+    /* Profile Image with Neon Ring */
+    .profile-wrapper {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .profile-wrapper::after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      border-radius: 50%;
+      box-shadow: 0 0 20px #9b59b6, 0 0 40px #8e44ad, 0 0 60px #9b59b6;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 20px #9b59b6, 0 0 40px #8e44ad, 0 0 60px #9b59b6; }
+      100% { box-shadow: 0 0 40px #9b59b6, 0 0 60px #8e44ad, 0 0 80px #9b59b6; }
+    }
+
+    .profile-wrapper img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Bullets */
+    .bullets {
+      text-align: left;
+      margin: 20px 0;
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+
+    .bullets p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 20px 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(90deg, #8e44ad, #3498db);
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #8e44ad, 0 0 20px #3498db;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #8e44ad, 0 0 30px #3498db;
+    }
+
+    /* Bottom text */
+    .bottom-text {
+      font-size: 1.2rem;
+      color: #fff;
+      text-shadow: 0 0 5px #fff;
+      margin-top: 20px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .urgent {
+        font-size: 1.3rem;
+      }
+      .btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+      }
+      .bullets {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-wrapper">
+      <img src="https://via.placeholder.com/300x300.png?text=Teacher+Photo" alt="Indian woman trader">
+    </div>
+
+    <h1>★TGI MARKETS PRO™★</h1>
+
+    <div class="urgent">!! JOIN US ON TELEGRAM !!</div>
+
+    <div class="bullets">
+      <p>⚡ Intra Day Option Traders</p>
+      <p>💎 Daily Educational Insights</p>
+      <p>🟩 14 Years Share Market Experience</p>
+      <p>🟦 We don't speak, our results do</p>
+    </div>
+
+    <a href="https://t.me/yourtelegram" target="_blank" class="btn">👈 JOIN ON TELEGRAM 👉</a>
+
+    <div class="bottom-text">STILL WAITING!?</div>
+  </div>
+</body>
+</html>
